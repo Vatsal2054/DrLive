@@ -1,5 +1,5 @@
 const apiInfo = {
-    URL: "http://localhost:3000",
+    URL: import.meta.env.VITE_BACKEND_URL,
 };
 
 export default apiInfo;
