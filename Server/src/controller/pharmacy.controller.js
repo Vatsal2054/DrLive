@@ -10,7 +10,7 @@ const GOOGLE_MAPS_API_KEY = process.env.GOOGLE_MAPS_API_KEY;
 const getNearbyPharmacies = async (req, res) => {
   try {
     // Get location parameters from query or use defaults
-    const { lat = 22.3072, lng = 73.1812, radius = 5000 } = req.query;
+    const { lat = 22.3072, lng = 73.1812, radius = 25000 } = req.query;
     
     // Validate input parameters
     if (isNaN(parseFloat(lat)) || isNaN(parseFloat(lng)) || isNaN(parseInt(radius))) {
